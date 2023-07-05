@@ -191,6 +191,11 @@ It can be concluded that everything works correctly when the feature passes all 
 An area for improvement in the testing would be to automate the testing of timeframes so that it checks to see whether the correct information is being displayed at any given time because
 it is possible that the database might return entries in the incorrect order when using external database services.
 
+## Automatic testing upon push to repository:
+
+![image](https://github.com/Damyan03/testingLaravel/assets/112628176/1e8f7036-0ad8-40aa-9a1f-cc07d73767c7)
+
+
 
 
 
