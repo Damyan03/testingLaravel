@@ -24,8 +24,8 @@ test('can add entries to database from csv file', function () {
     Storage::fake('local');
     $this->seed();
 
-    Storage::disk('local')->put('app\temp.csv', $csvContent);
-    $path = Storage::disk('local')->path('app\temp.csv');
+    Storage::disk('local')->put('app/temp.csv', $csvContent);
+    $path = Storage::disk('local')->path('app/temp.csv');
     $file = new UploadedFile(
         $path,
         'temp.csv',
@@ -63,8 +63,8 @@ test('throws an error when invalid file submitted', function () {
     Storage::fake('local');
     $this->seed();
 
-    Storage::disk('local')->put('app\temp.csv', $csvContent);
-    $path = Storage::disk('local')->path('app\temp.csv');
+    Storage::disk('local')->put('app/temp.csv', $csvContent);
+    $path = Storage::disk('local')->path('app/temp.csv');
     $file = new UploadedFile(
         $path,
         'temp.csv',
